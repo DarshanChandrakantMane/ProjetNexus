@@ -1,0 +1,520 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =============  First Head ============= */
+
+/* .head{
+    position: fixed;
+} */
+
+
+.First{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(248, 243, 243);
+    box-shadow: 1px 1px 10px ;
+    position: relative;
+    z-index: 2;
+}
+
+.Logo{
+    height: 100px;
+    width: 300px;
+    /* background-color: khaki; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NightRegister
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    width: 400px;
+    /* background-color: hotpink; */
+}
+
+.Night{
+    border-radius: 10px;
+}
+.Night:hover{
+    background-color: rgb(248, 247, 251);
+}
+
+.Register{
+    padding: 6px 6px 0px 8px;
+    margin: 0px 10px 10px 0px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10px;
+}
+
+.Sign{
+    padding: 6px 6px 0px 8px;
+    margin: 0px 10px 10px 0px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(10, 54, 198);
+}
+
+.Sign:hover{
+    background-color: rgb(88, 88, 226);
+    color: rgb(255, 251, 0);
+}
+
+@media (Max-width:610px) {
+
+    .First{
+        height: 200px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: rgb(248, 243, 243);
+        box-shadow: 1px 1px 10px ;
+       position: relative;
+        z-index: 2; 
+    } 
+
+    
+    .NightRegister
+    {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100px;
+        width: 300px;
+        /* background-color: hotpink; */
+    }   
+}
+/* =============   End First Head =============== */
+
+
+
+/* =============   Second Head   ================ */
+
+.Second{
+    height: 80px;
+    width: 100%;
+    /* margin: 5px; */
+    box-shadow: 1px 1px black;
+    margin-bottom: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+
+    position: sticky;
+    top:1px
+}
+
+.Home-Welcome{
+   /* background-color: khaki; */
+    height: 80px;
+    width: 500px;
+    display: flex;
+}
+
+.HomeICON{
+    margin-left: 20px;
+    height: 80px;
+    width: 100px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 5px;
+}
+
+.HomeBack{
+    border-radius: 30px;
+}
+.HomeBack:hover{
+    background-color: aqua;
+}
+
+.Welcome{
+    height: 80px;
+    /* width: 300px; */
+    /* background-color: cadetblue; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    animation-name: Well;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+@keyframes Well {
+    from{
+        opacity: 0;
+        transform: translate(100px);
+    } 
+}
+.Navigation{
+    margin-right: 50px;
+    height: 80px;
+    width: 500px;
+    /* background-color: wheat; */
+}
+
+ .Menu{
+    float: right;
+    display: flex;
+}
+
+
+.Nav{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 10px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.MultiPages{
+    padding: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.MultiPages:hover{
+    vertical-align: super;
+    text-decoration:underline;
+    background-color: aquamarine;
+    position: relative;
+    bottom: 5px;
+}
+
+@media (max-width: 680px) {
+
+    .Second{
+    height: 160px;
+    width: 100%;
+    /* margin: 5px; */
+    box-shadow: 1px 1px black;
+    background-color: white;
+     display: grid;
+   /* justify-content: space-between; */
+
+    position: sticky;
+    top:0px
+ }
+
+ .Navigation{
+    margin-right: 50px;
+    height: 80px;
+    width: 500px;
+    /* background-color: wheat; */
+ }
+
+ .Welcome{
+    font-size: small;
+ }
+}
+
+@media (max-width:500px) {
+
+    .Welcome{
+        font-size: 10px;
+    }
+     
+
+    .Menu{
+        float: left;
+        display: flex;
+    }
+
+    .Welcome{
+        height: 80px;
+        /* width: 100%; */
+        /* background-color: cadetblue; */
+        display: flex;
+        align-items: center;
+        text-align: center;
+    
+        animation-name: Well;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes Well {
+        from{
+            opacity: 0;
+            transform: translate(10px);
+        } 
+    }
+
+    .Navigation{
+        margin-left: 5px;
+        height: 80px;
+        width: 60vw;
+        /* background-color: wheat; */
+     }
+    
+     .Home-Welcome{
+        /* background-color: khaki; */
+         height: 80px;
+         width: 100%;
+         display: flex;
+     }
+    
+    
+}
+
+
+/* ============   End Header =============== */
+
+
+/* ===============   Main   ==================== */
+
+.Container{
+    height: 900px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.FirstBox{
+    margin-bottom: 20px;
+    /* background-color: khaki; */
+    width: 70vw;
+    height: 320px
+  
+    
+}
+.FirstBox{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.SecondBox{
+    /* background-color: khaki; */
+    width: 70vw;
+    height: 320px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.Firsthalf{
+    /* background-color: palegoldenrod; */
+    height: 320px;
+}
+
+/* .Secondhlaf{
+    background-color: rgb(194, 202, 198);
+    /* height: 320px; */
+} */
+.BoxImages{
+    float: right;
+}
+
+
+.quiz, .MidText{
+    margin: 10px 0px;
+    text-align: center;
+}
+
+
+.html{
+    animation-name: HTML;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes HTML {
+    from{
+        opacity: 0;
+        transform: translate(100px);
+    } 
+}
+
+.css{
+    animation-name: css;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 4s;
+    animation-iteration-count: 1;
+}
+
+@keyframes css {
+    from{
+        opacity: 0;
+        transform: translate(-150px);
+    } 
+}
+
+.js{
+    animation-name: js;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes js {
+    from{
+        opacity: 0.5;
+        transform: translate(20px);
+    } 
+}
+
+.webImg{
+    height: 150px;
+    width: 60vw;
+    margin-bottom: 20px;
+    margin-left: 80px;
+}
+
+.WebDesignIMG{
+    border-radius: 30px;
+}
+
+@media (max-width:900px) {
+    .FirstBox{
+        margin-bottom: 20px;
+        width: 90vw;
+        height: 320px
+    }
+
+    .FirstBox{
+        overflow: scroll;
+        
+    }
+    
+    .SecondBox{
+        width: 90vw;
+        height: 320px;
+        overflow: scroll;
+    }
+}
+
+@media (max-width:500px) {
+
+    
+}
+
+/* ===========   End Main ============= */
+
+
+/* =========     Footer     ============ */
+
+.FooterContainer{
+    box-shadow: -1px -1px 2px;
+    height: 400px;
+    background-image: url(./Images/Katilhai.jpeg);
+    background-size: cover;
+
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.FootColumn1{
+    margin: 60px 0px;
+   
+   /* background-color: aqua; */
+}
+
+.FootColumn2{
+    margin: 60px 0px;
+
+   /* background-color: aqua; */
+}
+
+.FootSecond{
+    display: flex;
+    justify-content: center;
+    /* background-color: rgb(139, 192, 238); */
+}
+
+.ImgDesFooter{
+    border-radius: 50px;
+}
+
+.Mo-Number, .Email{
+    display: flex;
+    align-items: center;
+}
+
+.FooterText{
+   padding: 10px 30px;
+}
+
+.SocialPaltformIMG{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px;
+    background-color: aqua;
+    border-radius: 20px;
+
+}
+
+.CopyRights{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.White{
+    color: white;
+}
+
+
+@media (max-width:900px) {
+   .FooterContainer{
+    box-shadow: -1px -1px 2px;
+    height: 500px;
+    background-image: url(./Images/Katilhai.jpeg);
+    background-size: cover;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.5fr;
+    
+}
+    
+    .FootColumn1{
+        margin: 5px 10px;
+       /* background-color: aqua; */
+    }
+    
+    .FootColumn2{
+        margin: 1px 10px;
+       /* background-color: aqua; */
+    }
+    
+    .ImgDesFooter{
+        border-radius: 50px;
+    }
+    
+    .FooterText{
+       padding: 0px 20px;
+    }
+    
+    .SocialPaltformIMG{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        background-color: aqua;
+        border-radius: 20px;
+    }
+
+}
